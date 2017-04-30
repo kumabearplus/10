@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style type="text/css">
+  	body {
+  	  font-family: arial;
+  	}
+    .sheet {
+      width: 600px;
+      margin: 24px auto;
+      padding-bottom: 16px;
+      color: #757575;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    .clearfix:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .clearfix {
+      margin-top: 16px;
+    }
+    .xx h2 {
+      padding: 15px 16px;
+      color: #fff;
+      background-color: #009688;
+    }
+    .user {
+      margin: 16px;
+    }
+    .info {
+      margin-top: 16px;
+    }
+    .info p {
+      margin: 0;
+      vertical-align: middle;
+      background-color: white;
+    }
+    .info input,.info textarea {
+      padding: 8px 0;
+      display: block;
+      border: none;
+      border-bottom: 1px solid #808080;
+      width: 100%;
+
+    }
+    .info input:focus,.info textarea:focus {
+      outline: none;
+    }
+    .ct {
+      width: 50%;
+      float: left;
+      line-height: 1.4;
+    }
+    .submit {
+      margin-top: 16px;
+    }
+    .submit input {
+      padding: 8px 16px;
+      color: #fff;
+      background-color: #009688;
+      border: none;
+    }
+    li {
+      list-style-type: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+  	<div class="xx"><h2>信息收集表</h2></div>
+  	<div class="user">
+  	  <div class="info">
+  	  	<p>姓名</p>
+  	  	<input type="text" name="name" >
+  	  </div>
+  	  <div class="info">
+  	  	<p>QQ</p>
+  	  	<input type="text" name="QQ" >
+  	  </div>
+  	  <div class="info">
+  	  	<p>要说的话</p>
+  	  	<textarea name="hua" cols="30" rows="4"></textarea>
+  	  </div>
+  	  <div class="clearfix">
+        <div class="ct">  
+      	  <li><input type="checkbox" name="checkbox" checked="checked" value="Milk">Milk</li>
+      	  <li><input type="checkbox" name="checkbox" value="Sugar">Sugar</li>
+      	  <li><input type="checkbox" name="checkbox" value="Lemon">Lemon</li>
+        </div>
+        <div class="ct">
+          <li><input type="radio" name="radio" checked="checked" value="Male">Male</li>
+          <li><input type="radio" name="radio" value="Female">Female</li>
+        </div>
+      </div>
+      <div class="submit">
+      	<input type="submit" name="submit" value="提交">
+      </div>
+  	</div>
+  </div>
+</body>
+</html>

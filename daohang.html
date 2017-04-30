@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      font-family: arial;
+    }
+    .box{
+      color: #000;
+      background-color: #f1f1f1;
+      width: 600px;
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)!important;
+    }     
+    .box:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    li,.ct{
+      float: left;
+      position: relative;
+    }
+        
+    a {
+      display: block;
+      padding: 8px 16px;
+      color: #333;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #000;
+      background-color: #ccc;
+    }
+    .ct a:hover {
+      background-color: #0f0;
+      color: blue;
+    }
+    .children {
+      color: #000;
+      background-color: #fff;
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 160px;
+      margin: 0;
+      padding: 0;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)!important;
+    }
+    li:hover .children {
+      display: block;
+    }
+    </style>
+</head>
+
+<body>
+  <div class="box">
+    <li><a href="#">首页</a>
+      <div class="children ct">
+        <a href="#" class="ct">电视剧</a>
+        <a href="#" class="ct">动漫</a>
+        <a href="#" class="ct">电影</a>
+      </div>      
+    </li>
+    <li><a href="#">作品</a>
+      <div class="children">
+        <a href="#">美人鱼</a>            
+        <a href="#">西游记</a>            
+        <a href="#">红楼梦</a>            
+      </div>      
+    </li>
+    <li><a href="#">更多</a>          
+      <div class="children">
+        <a href="#">GitHub</a>            
+        <a href="#">博客</a>            
+        <a href="#">知乎</a>            
+      </div> 
+    </li>
+  </div>
+</body>
+</html>
